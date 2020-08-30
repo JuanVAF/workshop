@@ -1,5 +1,5 @@
 ---
-description: >-
+Description: >-
   Neste tutorial vamos ajudá-lo a criar um aplicativo Web utilizando React para
   consumir uma API
 ---
@@ -87,17 +87,7 @@ O React cria os arquivos e pastas que estaremos usando para modificar nosso proj
 Dentro da pasta **src** está o arquivo App.js 
 
 
-
-
-
-
-
 Pronto!
-
-
-
-
-
 
 
 [JSON](https://www.json.org/json-en.html) 
