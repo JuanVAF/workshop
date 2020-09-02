@@ -1,10 +1,11 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 
+
 export default () => (
     <Carousel autoPlay>
         <div>
-            <img alt="" src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" />
+            <img alt="" src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" />
             <p className="legend">Workshops</p>
         </div>
         <div>
@@ -16,7 +17,7 @@ export default () => (
             <p className="legend">Palestras</p>
         </div>
         <div>
-            <img alt="" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1190&q=80" />
+            <img alt="" src="https://images.unsplash.com/photo-1531058020387-3be344556be6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" />
             <p className="legend">Reuniões de negócio</p>
         </div>
         <div>
@@ -28,11 +29,11 @@ export default () => (
             <p className="legend">Festas</p>
         </div>
         <div>
-            <img alt="" src="https://images.unsplash.com/photo-1560523160-754a9e25c68f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1020&q=80" />
+            <img alt="" src="https://images.unsplash.com/photo-1560523160-754a9e25c68f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" />
             <p className="legend">Encontros</p>
         </div>
         <div>
-            <img alt="" src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" />
+            <img alt="" src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" />
             <p className="legend">Marketing</p>
         </div>
         <div>
