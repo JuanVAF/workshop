@@ -1,5 +1,5 @@
 ---
-Description: >-
+description: >-
   Neste tutorial vamos ajudá-lo a criar um aplicativo Web utilizando React para
   consumir uma API
 ---
@@ -16,7 +16,7 @@ Aqui está o link do repositório do projeto: [https://github.com/facebook/react
 
 ## Preparação do ambiente
 
-A primeira coisa que precisamos fazer antes de iniciar nosso projeto é garantir que temos o [NodeJs](https://nodejs.org/en/download/) instalado em nosso sistema**.** Para isto, abra um terminal **Ctrl + R** e digite `cmd` agora no seu prompt de comando digite `node -v` assim saberemos qual a versão do node instalada. Caso, retorne um erro significará que o NodeJs não está instalado, então [clique aqui](https://nodejs.org/en/download/) e baixe o NodeJs versão LTS, conforme seu sistema operacional e instale na sua máquina. Para instalar o Node é só dar next, next e finish. =\) 😉 Após a instalação concluída, repita a operação para verificar a versão.
+A primeira coisa que precisamos fazer antes de iniciar nosso projeto é garantir que temos o [NodeJs](https://nodejs.org/en/download/) instalado em nosso sistema**.** Para isto, abra um terminal **Ctrl + R** e digite `cmd` agora no seu prompt de comando digite `node -v`, assim saberemos qual a versão do node instalada. Caso, retorne um erro, significará que o NodeJs não está instalado, então, [clique aqui](https://nodejs.org/en/download/) e baixe o NodeJs versão LTS, conforme seu sistema operacional e instale na sua máquina. Para instalar o Node é só dar next, next e finish. =\) 😉 Após a instalação concluída, repita a operação para verificar a versão.
 
 ![](.gitbook/assets/node%20%281%29.png)
 
@@ -48,11 +48,11 @@ Se quiser saber mais sobre o `create-react-app` pode conferir a documentação c
 
 ## Criando o projeto 
 
-Este comando irá criar o nosso projeto chamado **workshop**.
+A ideia é criar uma  aplicação que fará o cadastro de usuários permitindo que eles criem eventos como: eventos, conferências, palestras, simpósios e workshops. Este comando irá criar o nosso projeto chamado **workshop**. Mas, você pode dar o nome que preferir.
 
 `create-react-app workshop`
 
-Navegue para a pasta do projeto e inicie a aplicação.
+Aguarde o final da instalação. Em seguida, navegue para a pasta do projeto e inicie a aplicação.
 
 `cd workshop && yarn start`
 
@@ -84,15 +84,89 @@ yarn add react-bootstrap bootstrap
 
 O React cria os arquivos e pastas que estaremos usando para modificar nosso projeto, e deixá-lo do jeito que nós queremos. Vá até a pasta **public** dentro dela está o nosso index.html. Dentro dele você vai encontrar dentro da tag body a`<div id="root"></div>` que é onde nossas alterações irão aparecer. Não apague essa div, do contrário terá problemas com a renderização do seu app.
 
-Dentro da pasta **src** está o arquivo App.js 
+## [Wireframe](https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=workshop.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FJuanVAF%2Fworkshop%2Fmaster%2Fworkshop.drawio) 
+
+Vamos dar uma olhada no wireframe do nosso projeto. [Clique aqui](https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=workshop.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FJuanVAF%2Fworkshop%2Fmaster%2Fworkshop.drawio)
+
+![](.gitbook/assets/workshop.png)
+
+## Criando a tela de login
+
+Dentro da pasta **src** está o arquivo App.js nele é possível incluir os componentes necessários para o nosso projeto. Para começar vamos remover todo o conteúdo deste arquivo deixando apenas a importação do React.
+
+![](.gitbook/assets/tela-1.png)
+
+Fizemos isso para começar a adicionar os componentes e elementos do nosso aplicativo Web. Então, não se preocupe, que logo vamos ter nossa tela de login criada. Abaixo da linha onde estamos importando o React, vamos importar os outros componentes.
+
+## Criando a Home Page
+
+Vamos agora criar a nossa homepage. 
+
+A primeira coisa que precisamos fazer é criar os arquivos que são responsáveis por gerar os componentes que estão presentes no nosso wireframe, e que vamos precisar importar da biblioteca Material UI, que são: AppBar, Carousel, Cards, Footer, por exemplo.
+
+Então, vamos criar uma pasta chamada **components** dentro da pasta **src** e outra pasta dentro de **components** com o nome do componente, no caso, **AppBar.** Dentro desta pasta também vamos criar um arquivo chamado **AppBar.js.** Agora abra o site ****[**Material UI**](https://material-ui.com/getting-started/installation/) se ****ainda não instalou, siga os passos para a instalação. Se já tiver instalado então, à esquerda você encontra um menu com várias opções, procure por **Componentes&gt;Surfaces&gt;App Bar**. Escolha um dos tipos de barras de aplicativos existentes.
+
+Veja na figura abaixo:
+
+![](.gitbook/assets/appbar.png)
 
 
-Pronto!
+
+Clique no botão **&lt; &gt;** e copie o código inteiro. Cole dentro do nosso arquivo **AppBar.js** que criamos e salve o arquivo. Abra o arquivo **App.js** e importe o componente, no meu caso, o componente se chama **PrimarySearchAppBar**. 
+
+Insira o código abaixo no App.js. 
+
+```text
+import React, { Component } from 'react'; 
+import './App.css';
+import PrimarySearchAppBar from './components/AppBar/AppBar';
+class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <PrimarySearchAppBar/>
+      </React.Fragment>
+    
+    );
+  }
+}
+
+export default App;
+```
+
+então agora é só repetir o processo para os outros componentes inserindo todos dentro do componente React.Fragment.
+
+```text
+<React.Fragment>
+    <PrimarySearchAppBar/>
+    <Outro Componente/>
+    <Outro Componente/>
+</React.Fragment>
+```
+
+Pronto! No final você pode rodar o comando `yarn start` para iniciar o servidor e ver o resultado no seu Browser. 
+
+## Criando formulário para cadastro
+
+## Consumindo a API
+
+[JSON](https://www.json.org/json-en.html)
 
 
-[JSON](https://www.json.org/json-en.html) 
 
-[https://jsonplaceholder.typicode.com/](https://jsonplaceholder.typicode.com/)
+{% embed url="https://jsonplaceholder.typicode.com/" %}
+
+
+
+
+
+Pronto! Projeto Finalizado! 
+
+Parabéns se conseguiu chegar até aqui.
+
+ 
+
+
 
 
 
