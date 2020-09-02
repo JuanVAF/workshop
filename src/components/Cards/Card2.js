@@ -77,7 +77,7 @@ const CustomCard = ({ classes, image, title, subtitle }) => {
   );
 };
 
-export const SolidGameCardDemo = React.memo(function SolidGameCard() {
+export const SolidCard2 = React.memo(function SolidCard2() {
   const gridStyles = useGridStyles();
   const styles = useStyles({ color: '#203f52' });
   const styles2 = useStyles({ color: '#4d137f' });
@@ -89,38 +89,38 @@ export const SolidGameCardDemo = React.memo(function SolidGameCard() {
         <Grid item>
           <CustomCard
             classes={styles}
-            title={'Palestras'}
+            title={'Eventos'}
             subtitle={'Você já pode criar o seu evento'}
             image={
-              'https://images.unsplash.com/photo-1560523160-754a9e25c68f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=720&q=80'
+              'https://images.unsplash.com/photo-1515169067868-5387ec356754?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
             }
           />
         </Grid>
         <Grid item>
           <CustomCard
             classes={styles2}
-            title={'Eventos'}
-            subtitle={'Crie um evento com a nossa equipe'}
+            title={'Workshops'}
+            subtitle={'Total conforto e infraestrutura'}
             image={
-              'https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
+              'https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
             }
           />
         </Grid>
         <Grid item>
           <CustomCard
             classes={styles3}
-            title={'Eventos'}
-            subtitle={'Sua empresa em foco'}
-            image={'https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&auto=format&fit=crop&w=1225&q=80https://images5.alphacoders.com/690/thumb-1920-690653.png'}
+            title={'Palestras'}
+            subtitle={'O que você está esperando?'}
+            image={'https://images.unsplash.com/photo-1559223694-98ed5e272fef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'}
           />
         </Grid>
         <Grid item>
           <CustomCard
             classes={styles4}
-            title={'Eventos'}
-            subtitle={'Experimente!'}
+            title={'Simpósios'}
+            subtitle={'Vamos cuidar de tudo para você'}
             image={
-              'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+              'https://images.unsplash.com/photo-1558008258-3256797b43f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80'
             }
           />
         </Grid>
@@ -128,4 +128,4 @@ export const SolidGameCardDemo = React.memo(function SolidGameCard() {
     </>
   );
 });
-export default SolidGameCardDemo;
+export default SolidCard2;

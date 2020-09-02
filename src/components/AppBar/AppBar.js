@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar:{
     padding: 5,
+    marginRight: theme.spacing(2),
   },
   icon:{
     color: '#fff',

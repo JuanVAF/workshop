@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-import SolidGameCardDemo from './card1';
-import FooterPagePro from './footer';
-import AlignItemsList from './list';
-import PrimarySearchAppBar from './navbar';
-import SolidGameCardDemo2 from './card2';
-import Carousel from './carousel';
+import PrimarySearchAppBar from './components/AppBar/AppBar';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Carousel from './components/Carousel/Carousel';
+import SolidCard1 from './components/Cards/Card1';
+import SolidCard2 from './components/Cards/Card2';
 import Divider from '@material-ui/core/Divider';
-import Box from './box';
+import Box from './components/Box/Box';
+import AlignItemsList from './components/List/List';
+import FooterPage from './components/Footer/Footer';
 
 class App extends Component {
   render() {
@@ -16,15 +16,15 @@ class App extends Component {
       <React.Fragment>
         <PrimarySearchAppBar/>
         <Carousel />
-        <SolidGameCardDemo/>
-        <SolidGameCardDemo2/>
+        <SolidCard1/>
+        <SolidCard2/>
         <Box />
         <Divider />
         <Box />
         <AlignItemsList/>
         <AlignItemsList/>
         <Box />
-        <FooterPagePro/>
+        <FooterPage/>
       </React.Fragment>
     
     );
