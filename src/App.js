@@ -9,7 +9,10 @@ import Divider from '@material-ui/core/Divider';
 import Box from './components/Box/Box';
 import AlignItemsList from './components/List/List';
 import FooterPage from './components/Footer/Footer';
+import Routes from "./routes";
+import "./styles/global";
 
+const App = () => <Routes />;
 class App extends Component {
   render() {
     return (
