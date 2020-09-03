@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #38D0F2;
+ 
 }
 
 code {
@@ -22,8 +22,18 @@ code {
     background: #00000000;
 } */
 
+container-fluid text-center text-md-left{
+  justify-content: center;
+  align-items: center;
+
+}
+
 footer{
-  background-color: darkgrey;
+  background-color: #3f51b5;
   font-family: 'Arial';
+  color: white;
+  align-items: center;
+  justify-items: center;
+  
 }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, BrowserRouter } from 'react-router-dom';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -81,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     [theme.breakpoints.up('md')]: {
       display: 'none',
-    },
+    }
   },
 }));
 
@@ -121,11 +122,14 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
       >
-      <MenuItem onClick={handleMenuClose}>Login</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Perfil</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Dashboard</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Registre-se</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Sair</MenuItem>
+        <BrowserRouter>
+            <MenuItem onClick={handleMenuClose}><Link to="/Login" style={{ textDecoration: 'none' }}>Login</Link></MenuItem>
+            <MenuItem onClick={handleMenuClose}><Link to="/Perfil" style={{ textDecoration: 'none' }}>Perfil</Link></MenuItem>
+            <MenuItem onClick={handleMenuClose}><Link to="/Dashboard" style={{ textDecoration: 'none' }}>Dashboard</Link></MenuItem>
+            <MenuItem onClick={handleMenuClose}><Link to="/SignUp" style={{ textDecoration: 'none' }}>Registre-se</Link></MenuItem>
+            <MenuItem onClick={handleMenuClose}><Link to="/" style={{ textDecoration: 'none' }}>Sair</Link></MenuItem>
+        </BrowserRouter>
+      
     </Menu>
   );
   
@@ -246,3 +250,5 @@ export default function PrimarySearchAppBar() {
     </div>
   );
 }
+
+
